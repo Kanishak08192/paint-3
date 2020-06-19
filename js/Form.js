@@ -35,8 +35,8 @@ class Form {
     });
 
     this.reset.mousePressed(()=>{
-      player.updateCount(0);
-      game.update(0);
+      player.updateCount(2);
+      game.update(1);
       background('white');
     });
 
