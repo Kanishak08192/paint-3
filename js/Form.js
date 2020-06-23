@@ -35,9 +35,13 @@ class Form {
     });
 
     this.reset.mousePressed(()=>{
-      player.updateCount(2);
-      game.update(1);
-      background('white');
+      var drawingRef = database.ref('drawing');
+  drawingRef.set({
+    'd':[]
+   
+  })
+  dbDrawing = [];
+  drawing = [];
     });
 
   }
